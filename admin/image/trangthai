@@ -1,0 +1,20 @@
+-- Cấu trúc bảng cho bảng `trangthai`
+--
+
+DROP TABLE IF EXISTS `trangthai`;
+CREATE TABLE IF NOT EXISTS `trangthai` (
+  `trangthai` char(50) COLLATE utf8_vietnamese_ci NOT NULL,
+  `math` tinyint(4) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`math`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `trangthai`
+--
+
+INSERT INTO `trangthai` (`trangthai`, `math`) VALUES
+('Chờ xác nhận', 1),
+('Đã xác nhận', 2),
+('Đang giao hàng', 3),
+('Đã giao hàng', 4),
+('Hủy đơn hàng', 5);
